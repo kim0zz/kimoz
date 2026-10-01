@@ -2,10 +2,15 @@
 
 - Rozmawiaj z użytkownikiem po polsku.
 - To projekt Godot 4.7.2, GDScript, gra 2D. Zachowaj renderer Compatibility.
-- Przed pracą nad grą przeczytaj cały `GAME_DESIGN_V0_2.md`: to nadrzędna specyfikacja projektu Auto Battler Zoo. W razie rozbieżności z wcześniejszymi notatkami obowiązuje ten brief oraz późniejsze wyraźne decyzje użytkownika.
-- `docs/kierunek.md` zawiera kontekst techniczny. Wcześniejsze pomysły latarnika i wędrownej osady nie są częścią projektu.
+- Zaczynaj od `docs/CURRENT_STATE.md`: odróżnia działającą grę, eksperymenty, zatwierdzony kierunek i otwarte decyzje oraz wskazuje źródła dla rodzaju zadania. Sprawdź wskazane źródła i kod przed zmianą.
+- `GAME_DESIGN_V0_2.md` pozostaje nadrzędną specyfikacją; późniejsze wyraźne decyzje użytkownika zastępują starsze. Przy zmianie reguł przeczytaj odpowiednie sekcje i ich późniejsze aktualizacje; przy szerokiej przebudowie lub niejasnej sprzeczności przeczytaj cały brief. `CURRENT_STATE.md` jest mapą, nie zgodą na wdrożenie wszystkich priorytetów.
+- `docs/kierunek.md` jest rejestrem decyzji i kontekstu technicznego. Wcześniejsze pomysły latarnika i wędrownej osady nie są częścią projektu. Propozycja, akceptacja designu, wdrożenie i odbiór użytkownika to różne stany.
 - Realizuj zlecony zakres. Podejmuj drobne decyzje techniczne samodzielnie; nie dodawaj niezamówionych mechanik ani fabuły.
 - Zapisuj zaakceptowane decyzje o stylu i mechanikach w `docs/kierunek.md`.
+- Gdy decyzja zmienia aktualny kierunek lub stan implementacji, zaktualizuj też odpowiednią sekcję briefu i mapę `docs/CURRENT_STATE.md`; nowe ustalenie zastępuje stare tylko w swoim zakresie.
+- Zadania prowadź według `docs/TASK_WORKFLOW.md`, a zakres testów dobieraj z `docs/VERIFICATION_MAP.md`. Zmianę wyglądu lub gameplayu przedstaw w nagraniu albo porównaniu, następnie użytkownik robi playtest; techniczny PASS nie oznacza akceptacji jakości.
+- Przy animacji ustal docelowy efekt i kryteria na jednej postaci lub akcji przed rozszerzeniem na roster. Nie zakładaj, że ruch/transformacje istniejącego obrazka spełnią oczekiwanie jakości; nazwij wybraną metodę i pokaż efekt w skali walki.
+- Główny agent dobiera delegacje do zadania i zachowuje odpowiedzialność za integrację. Proste delegacje preferencyjnie Luna high, gdy wystarczy i opłaca się; dla każdej wyznacz zakres plików oraz kryteria odbioru, unikaj równoczesnej edycji tych samych plików.
 - Używaj scen `.tscn`, zasobów `.tres` i typowanego GDScript. Ścieżki zasobów zapisuj jako `res://`.
 - Sceny: `scenes/`; skrypty: `scripts/`; grafika i audio: `assets/`; dane: `resources/`.
 - Nie edytuj wygenerowanego katalogu `.godot/`. Zachowuj pliki `.uid` generowane przez Godot.

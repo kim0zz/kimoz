@@ -1,6 +1,6 @@
 # Auto Battler Zoo — Project Brief v0.2
 
-> Aktualny draft i lvl3 opisuje sekcja 53; ruchomy Skunks jest opisany w sekcji 49. Mechaniki wcześniejszych skilli opisują sekcje 42–43, a rozszerzenie mocniejszych skilli i indywidualnych początkowych cooldownów na cały roster — sekcja 47. Sekcja 46 dokumentuje wcześniejszą próbę trzech hybryd. Nowsze decyzje zastępują starsze sprzeczne liczby, pozostawione jako historia baseline'u.
+> Mapa działającej gry, wariantów i przyszłego designu: `docs/CURRENT_STATE.md`. Bieżące priorytety i sposób odbioru: §63; warsztat nowego rosteru: §62. Stan implementacji draftu/lvl3 opisuje §53 z późniejszymi korektami (comeback §55, ranged §60, Królik §61). Ruchomy Skunks: §49; skille: §42–43 i §47. §46 dokumentuje wcześniejszą próbę trzech hybryd. Nowsze decyzje zastępują starsze tylko w odpowiednim zakresie; przyszły design nie oznacza jego wdrożenia. Starsze sprzeczne zapisy pozostają historią baseline'u.
 
 ## Cel projektu
 
@@ -1007,7 +1007,7 @@ Preferencja użytkownika z playtestu: proste delegowane zadania kierować do Lun
 
 Astra powinna:
 
-1. przeczytać cały dokument,
+1. zacząć od `docs/CURRENT_STATE.md`, przeczytać właściwe sekcje i ich późniejsze aktualizacje oraz kod; cały dokument przy szerokiej przebudowie lub niejasnej sprzeczności,
 2. traktować go jako source of truth,
 3. wskazać ewentualne sprzeczności lub braki techniczne,
 4. NIE wymyślać nowych mechanik bez potrzeby,
@@ -1443,3 +1443,13 @@ Jeden pasek HP: kolor drużyny oznacza życie, jasnoniebieski dodatkowy segment 
 2026-09-28: Użytkownik potwierdził pozostawienie Małpowiedzia i Skunpy bez zmian, z leczeniem sojuszników. Brak leczenia drużyny i self-heal dotyczy dominującego Hipopotama w parze Małpa+Hipopotam, nie jest globalnym ograniczeniem niedominującej Małpy.
 
 2026-09-28: Zatwierdzone nazwy pary Małpa+Hipopotam: Małpotam — dominuje Małpa; Hipopa — dominuje Hipopotam. Następny warsztat: Orzeł+Jeż; dwa kierunki zapisane w HYBRID_DOMINANCE_WORKSHOP.md wyłącznie jako propozycje. Bez implementacji.
+
+# 63. Priorytety wyboru hybryd i czytelności oraz odbiór jakości
+
+2026-10-01: Użytkownik wskazał dwa równorzędne najwyższe priorytety: **wybór rezultatu hybrydy przy łączeniu do lvl2 i lvl3** oraz **czytelność GUI i feedbacku**. Gracz powinien rozumieć, jaką drużynę posiada, co może dobrać/połączyć i jak przebiega walka. Obecna niejasność informacji pogarsza odbiór gry.
+
+Wybór lvl2 rozwija kierunek dominacji z §62 i warsztatu hybryd. Wybór lvl3 jest wymaganiem docelowym; konkretne opcje, przepisy i sposób dziedziczenia dominacji pozostają do zamknięcia. Nie wywodzić ich automatycznie ze starych przepisów lvl3. Wypowiedź o tym, co można „kupić”, nie wprowadza nowej waluty, golda ani sklepu; obecna gra dobiera za akcje. Sposób przedstawienia mocnych stron i braków drużyny trzeba zaprojektować, bez arbitralnego wyniku siły lub gwarantowanego zwycięstwa.
+
+Użytkownik podał przykład niespełnionego oczekiwania: wcześniej zlecone animacje postaci wyszły wizualnie zbyt ubogo mimo działania. Techniczny test animacji nie potwierdza jakości. Dla nowych zmian wizualnych/gameplayowych użytkownik zaakceptował workflow: agent wykonuje kontrole techniczne, pokazuje krótkie nagranie lub porównanie, następnie użytkownik ocenia efekt i robi playtest. Docelowa referencja jakości animacji nie została jeszcze wskazana.
+
+Najbliższa iteracja porządkuje kontekst i sposób weryfikacji: `docs/CURRENT_STATE.md`, `docs/TASK_WORKFLOW.md`, `docs/VERIFICATION_MAP.md`. Ten zapis nie wdraża jeszcze wyboru hybryd ani nowego GUI. Szczegółowe kryteria pilota i zlecenia implementacyjne ustalamy przed konkretną zmianą; priorytet roadmapy nie jest zgodą na wymyślenie otwartych mechanik.
