@@ -1,4 +1,6 @@
-# Combat Prototype v0.1 — weryfikacja
+# Komendy i historia weryfikacji Kimoz
+
+Dobór kontroli dla obecnego zadania: [VERIFICATION_MAP.md](VERIFICATION_MAP.md). Stan wariantów i źródła: [CURRENT_STATE.md](CURRENT_STATE.md). Ten dokument zachowuje wcześniejsze komendy i wyniki kolejnych etapów; określenia „obecny”, „bieżący” oraz PASS poniżej odnoszą się do opisywanego etapu, nie potwierdzają aktualnego przebiegu wszystkich testów. Szczególnie sprawdź późniejsze zmiany Skunksa, ruchu ranged i Królika przed użyciem historycznych oczekiwań.
 
 ## Aktualizacja: pełny roster skilli
 
