@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="ZooUnitDefinition" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/unit_definition.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/data/skill_definition.gd" id="2"]
+[ext_resource type="Resource" path="res://resources/hybrid_skills/eagle_hedgehog_dive.tres" id="3"]
+[ext_resource type="Resource" path="res://resources/hybrid_skills/eagle_hedgehog_thorns.tres" id="4"]
+
+[resource]
+script = ExtResource("1")
+id = "eagle_hedgehog"
+display_name = "Orzeł-Jeż"
+level = 2
+parents = Array[String](["eagle", "hedgehog"])
+visual_scale = 1.18
+role = "diver"
+max_hp = 230
+attack_damage = 5.5
+attack_interval = 0.5
+move_speed = 85
+attack_range = 12
+radius = 28
+preferred_min = 0
+preferred_max = 12
+color = Color(0.48, 0.43, 0.35, 1)
+skills = Array[ExtResource("2")]([
+ExtResource("3"), ExtResource("4")
+])

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="ZooSkillDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/skill_definition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "lvl3_05_triple_rear_cloud_dash"
+behavior = "dash"
+cloud_stagger = 0.12
+cloud_damage = 7
+cloud_duration = 1.7
+puff_interval = 0.08
+cloud_tick_interval = 0.5
+area_radius = 80
+airborne_hits = 3
+initial_cooldown = 3
+windup = 0
+recovery = 0
+duration = 0.23
+distance = 115
+speed = 620

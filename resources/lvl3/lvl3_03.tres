@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="ZooUnitDefinition" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/unit_definition.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/data/skill_definition.gd" id="2"]
+[ext_resource type="Resource" path="res://resources/lvl3/lvl3_03_banana.tres" id="3"]
+[ext_resource type="Resource" path="res://resources/lvl3/lvl3_03_dive.tres" id="4"]
+[ext_resource type="Resource" path="res://resources/lvl3/lvl3_03_thorns.tres" id="5"]
+
+[resource]
+script = ExtResource("1")
+id = "lvl3_03"
+display_name = "Gromobanan"
+level = 3
+parents = Array[String](["eagle_hedgehog", "monkey_hippo"])
+visual_scale = 1.30
+role = "ranged"
+max_hp = 500
+attack_damage = 6
+attack_interval = 0.55
+move_speed = 78
+attack_range = 230
+radius = 32
+preferred_min = 165
+preferred_max = 230
+color = Color(0.52, 0.49, 0.44, 1)
+skills = Array[ExtResource("2")]([ExtResource("3"), ExtResource("4"), ExtResource("5")])

@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="ZooSkillDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/skill_definition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "lvl3_01_triple_cone"
+behavior = "cone"
+cone_angle = 105
+slow_multiplier = 0.78
+cone_projectile_damage = 12
+impact_cloud = true
+cloud_damage = 7
+duration = 3
+cooldown = 9.5
+initial_cooldown = 5.5
+windup = 0.42
+recovery = 0.4
+damage = 31
+hits = 3
+hit_interval = 0.2
+range = 95
+cloud_tick_interval = 0.5

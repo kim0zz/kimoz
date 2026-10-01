@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ZooSkillDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/skill_definition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "lvl3_09_cloud_trail"
+behavior = "trail"
+cloud_damage = 6.5
+cloud_duration = 2.5
+area_radius = 80
+puff_interval = 0.34
+initial_cooldown = 4.5
+windup = 0
+recovery = 0.2
+hit_interval = 0.5
+range = 180
+duration = 1.7
+cloud_tick_interval = 0.5

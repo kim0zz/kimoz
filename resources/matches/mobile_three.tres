@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="ZooMatchDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/match_definition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "08 • Mobilne 3v3"
+team_a = Array[String](["cheetah","eagle","rabbit"])
+team_b = Array[String](["bear","monkey","skunk"])

@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="ZooUnitDefinition" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/unit_definition.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/data/skill_definition.gd" id="2"]
+[ext_resource type="Resource" path="res://resources/lvl3/lvl3_01_cone.tres" id="3"]
+
+[resource]
+script = ExtResource("1")
+id = "lvl3_01"
+display_name = "Błyskobanan"
+level = 3
+parents = Array[String](["bear_cheetah", "monkey_skunk"])
+visual_scale = 1.30
+role = "front"
+max_hp = 430
+attack_damage = 6
+attack_interval = 0.5
+move_speed = 90
+attack_range = 22
+radius = 32
+preferred_min = 0
+preferred_max = 22
+color = Color(0.78, 0.48, 0.28, 1)
+skills = Array[ExtResource("2")]([ExtResource("3")])

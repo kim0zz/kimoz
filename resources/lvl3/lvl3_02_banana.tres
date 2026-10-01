@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="ZooSkillDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/skill_definition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "lvl3_02_rotten_banana"
+behavior = "projectile"
+slow_multiplier = 0.75
+impact_cloud = true
+cloud_damage = 6
+duration = 3
+cooldown = 5.5
+initial_cooldown = 4
+recovery = 0.35
+damage = 18
+hit_interval = 0.5
+range = 230
+speed = 500
+cloud_tick_interval = 0.5

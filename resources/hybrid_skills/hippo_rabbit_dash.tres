@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="ZooSkillDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/skill_definition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+behavior = "dash"
+cooldown = 7.5
+initial_cooldown = 4.5
+damage = 0
+dash_mode = "farthest"
+distance = 200
+followup_damage = 45
+followup_hits = 1
+followup_interval = 0.15
+followup_stun = 1.2
+hit_interval = 0.15
+hits = 1
+id = "hippo_rabbit_dash"
+range = 8
+recovery = 0.6
+speed = 650
+target_rule = "farthest"
+windup = 0.25

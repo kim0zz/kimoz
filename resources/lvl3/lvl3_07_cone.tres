@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ZooSkillDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/skill_definition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "lvl3_07_banana_cone"
+behavior = "cone"
+cone_angle = 105
+cone_projectile_damage = 14
+cooldown = 12
+initial_cooldown = 6
+windup = 0.55
+recovery = 0.4
+damage = 32
+range = 90

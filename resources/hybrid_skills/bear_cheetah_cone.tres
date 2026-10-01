@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ZooSkillDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/skill_definition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+behavior = "cone"
+cone_angle = 100
+cooldown = 7
+initial_cooldown = 3.5
+damage = 24
+hit_interval = 0.16
+hits = 3
+id = "bear_cheetah_cone"
+range = 85
+recovery = 0.50
+stagger_duration = 0.1
+windup = 0.18

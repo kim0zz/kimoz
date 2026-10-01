@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="ZooUnitDefinition" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/unit_definition.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/data/skill_definition.gd" id="2"]
+[ext_resource type="Resource" path="res://resources/lvl3/lvl3_10_dive.tres" id="3"]
+[ext_resource type="Resource" path="res://resources/lvl3/lvl3_10_thorns.tres" id="4"]
+
+[resource]
+script = ExtResource("1")
+id = "lvl3_10"
+display_name = "Kolcoorzeł"
+level = 3
+parents = Array[String](["bear_hedgehog", "cheetah_eagle"])
+visual_scale = 1.30
+role = "front"
+max_hp = 530
+attack_damage = 6
+attack_interval = 0.6
+move_speed = 80
+attack_range = 20
+radius = 33
+preferred_min = 0
+preferred_max = 20
+color = Color(0.58, 0.46, 0.32, 1)
+skills = Array[ExtResource("2")]([ExtResource("3"), ExtResource("4")])

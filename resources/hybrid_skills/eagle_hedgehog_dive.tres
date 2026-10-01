@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ZooSkillDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/skill_definition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+behavior = "dive"
+cooldown = 6
+initial_cooldown = 4
+damage = 40
+hit_interval = 0.15
+hits = 1
+id = "eagle_hedgehog_dive"
+range = 8
+recovery = 0.3
+speed = 900
+target_rule = "farthest"
+windup = 0

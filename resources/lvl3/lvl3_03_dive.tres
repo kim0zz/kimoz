@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ZooSkillDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/skill_definition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "lvl3_03_farthest_dive"
+behavior = "dive"
+target_rule = "farthest"
+cooldown = 9
+recovery = 0.4
+damage = 48
+speed = 850

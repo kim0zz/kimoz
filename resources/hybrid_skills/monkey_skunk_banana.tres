@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ZooSkillDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/skill_definition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+area_radius = 55
+behavior = "projectile"
+cloud_damage = 5
+cooldown = 4.5
+initial_cooldown = 3.5
+damage = 9
+duration = 3
+hit_interval = 0.5
+hits = 1
+id = "monkey_skunk_banana"
+impact_cloud = true
+range = 230
+recovery = 0.35
+slow_multiplier = 0.75
+speed = 500
+windup = 0.3

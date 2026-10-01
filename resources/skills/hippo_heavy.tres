@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="ZooSkillDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/skill_definition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "hippo_heavy"
+behavior = "heavy"
+cooldown = 6
+initial_cooldown = 4.5
+windup = 1
+recovery = 0.75
+damage = 45
+stun_duration = 1.0
+hits = 1
+hit_interval = 0.15
+range = 8
+duration = 0
+distance = 0
+speed = 0

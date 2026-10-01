@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="ZooSkillDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/skill_definition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+area_radius = 75
+behavior = "trail"
+cloud_damage = 6.6
+cloud_stagger = 0.12
+cooldown = 6
+initial_cooldown = 3.5
+puff_interval = 0.45
+cloud_duration = 2.5
+distance = 12
+damage = 0
+duration = 2.5
+hit_interval = 0.5
+hits = 1
+id = "hedgehog_skunk_cloud"
+range = 170
+recovery = 0.35
+windup = 0

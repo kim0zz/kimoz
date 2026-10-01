@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="ZooUnitDefinition" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/unit_definition.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/data/skill_definition.gd" id="2"]
+[ext_resource type="Resource" path="res://resources/hybrid_skills/bear_cheetah_cone.tres" id="3"]
+
+[resource]
+script = ExtResource("1")
+id = "bear_cheetah"
+display_name = "Niedźwiedź-Gepard"
+level = 2
+parents = Array[String](["bear", "cheetah"])
+visual_scale = 1.16
+role = "front"
+max_hp = 225
+attack_damage = 6
+attack_interval = 0.5
+move_speed = 78
+attack_range = 22
+radius = 29
+preferred_min = 0
+preferred_max = 22
+color = Color(0.70, 0.43, 0.24, 1)
+skills = Array[ExtResource("2")]([
+ExtResource("3")
+])

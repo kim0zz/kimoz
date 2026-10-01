@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="ZooUnitDefinition" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/unit_definition.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/data/skill_definition.gd" id="2"]
+[ext_resource type="Resource" path="res://resources/lvl3/lvl3_11_dash.tres" id="3"]
+
+[resource]
+script = ExtResource("1")
+id = "lvl3_11"
+display_name = "Gepardoskok"
+level = 3
+parents = Array[String](["cheetah_eagle", "hippo_rabbit"])
+visual_scale = 1.30
+role = "diver"
+max_hp = 450
+attack_damage = 7
+attack_interval = 0.5
+move_speed = 98
+attack_range = 14
+radius = 31
+preferred_min = 0
+preferred_max = 14
+color = Color(0.78, 0.61, 0.38, 1)
+skills = Array[ExtResource("2")]([ExtResource("3")])

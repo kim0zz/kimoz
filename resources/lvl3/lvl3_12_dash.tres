@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ZooSkillDefinition" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/skill_definition.gd" id="1"]
+[ext_resource type="Resource" path="res://resources/lvl3/lvl3_12_cone.tres" id="2"]
+
+[resource]
+script = ExtResource("1")
+followup_skill = ExtResource("2")
+id = "lvl3_12_farthest_cone_dash"
+behavior = "dash"
+dash_mode = "farthest"
+cooldown = 14
+initial_cooldown = 6
+windup = 0
+recovery = 0
+duration = 0.28
+distance = 155
+speed = 650

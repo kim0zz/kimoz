@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ZooSkillDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/skill_definition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+airborne_hits = 3
+behavior = "dive"
+cooldown = 7
+initial_cooldown = 3.5
+damage = 15
+hit_interval = 0.15
+hits = 1
+id = "cheetah_eagle_dive"
+range = 8
+recovery = 0.3
+speed = 900
+target_rule = "nearest"
+windup = 0

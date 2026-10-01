@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="ZooUnitDefinition" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/unit_definition.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/data/skill_definition.gd" id="2"]
+[ext_resource type="Resource" path="res://resources/hybrid_skills/bear_hedgehog_cone.tres" id="3"]
+[ext_resource type="Resource" path="res://resources/hybrid_skills/bear_hedgehog_thorns.tres" id="4"]
+
+[resource]
+script = ExtResource("1")
+id = "bear_hedgehog"
+display_name = "Niedźwiedź-Jeż"
+level = 2
+parents = Array[String](["bear", "hedgehog"])
+visual_scale = 1.18
+role = "front"
+max_hp = 240
+attack_damage = 5.5
+attack_interval = 0.5
+move_speed = 66
+attack_range = 20
+radius = 30
+preferred_min = 0
+preferred_max = 20
+color = Color(0.48, 0.34, 0.23, 1)
+skills = Array[ExtResource("2")]([
+ExtResource("3"), ExtResource("4")
+])

@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@npgamedev/godot-mcp-server": "1.0.2"
+  }
+}

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ZooSkillDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/skill_definition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "lvl3_04_triple_heavy_banana"
+behavior = "projectile"
+stun_duration = 1.1
+cooldown = 11
+initial_cooldown = 7
+windup = 0.55
+recovery = 0.45
+damage = 31
+hits = 3
+hit_interval = 0.3
+range = 230
+speed = 500
+stun_last_hit_only = true

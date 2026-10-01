@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ZooSkillDefinition" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/skill_definition.gd" id="1"]
+[ext_resource type="Resource" path="res://resources/lvl3/lvl3_09_cone.tres" id="2"]
+
+[resource]
+script = ExtResource("1")
+followup_skill = ExtResource("2")
+id = "lvl3_09_reactive_side_dash"
+behavior = "dash"
+dash_mode = "side"
+cooldown = 7
+initial_cooldown = 3
+windup = 0
+recovery = 0
+duration = 0.22
+distance = 105
+speed = 640
+interrupt_on_hit = true

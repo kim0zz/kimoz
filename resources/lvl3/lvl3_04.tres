@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="ZooUnitDefinition" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/unit_definition.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/data/skill_definition.gd" id="2"]
+[ext_resource type="Resource" path="res://resources/lvl3/lvl3_04_banana.tres" id="3"]
+[ext_resource type="Resource" path="res://resources/lvl3/lvl3_04_dash.tres" id="4"]
+
+[resource]
+script = ExtResource("1")
+id = "lvl3_04"
+display_name = "Dystansowy Bokser"
+level = 3
+parents = Array[String](["monkey_hippo", "cheetah_rabbit"])
+visual_scale = 1.30
+role = "ranged"
+max_hp = 450
+attack_damage = 7
+attack_interval = 0.5
+move_speed = 90
+attack_range = 230
+radius = 31
+preferred_min = 125
+preferred_max = 205
+color = Color(0.72, 0.58, 0.42, 1)
+skills = Array[ExtResource("2")]([ExtResource("3"), ExtResource("4")])

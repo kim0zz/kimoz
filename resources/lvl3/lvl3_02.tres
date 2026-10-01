@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="ZooUnitDefinition" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/unit_definition.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/data/skill_definition.gd" id="2"]
+[ext_resource type="Resource" path="res://resources/lvl3/lvl3_02_dive.tres" id="3"]
+[ext_resource type="Resource" path="res://resources/lvl3/lvl3_02_banana.tres" id="4"]
+[ext_resource type="Resource" path="res://resources/lvl3/lvl3_02_thorns.tres" id="5"]
+
+[resource]
+script = ExtResource("1")
+id = "lvl3_02"
+display_name = "Orłokolc"
+level = 3
+parents = Array[String](["monkey_skunk", "eagle_hedgehog"])
+visual_scale = 1.30
+role = "ranged"
+max_hp = 460
+attack_damage = 5.8
+attack_interval = 0.55
+move_speed = 88
+attack_range = 230
+radius = 31
+preferred_min = 170
+preferred_max = 210
+color = Color(0.48, 0.55, 0.38, 1)
+skills = Array[ExtResource("2")]([ExtResource("3"), ExtResource("4"), ExtResource("5")])

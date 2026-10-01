@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="ZooUnitDefinition" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/unit_definition.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/data/skill_definition.gd" id="2"]
+[ext_resource type="Resource" path="res://resources/lvl3/lvl3_08_dive.tres" id="3"]
+[ext_resource type="Resource" path="res://resources/lvl3/lvl3_08_dash.tres" id="4"]
+
+[resource]
+script = ExtResource("1")
+id = "lvl3_08"
+display_name = "Skokosmuga"
+level = 3
+parents = Array[String](["eagle_hippo", "skunk_rabbit"])
+visual_scale = 1.30
+role = "mobile"
+max_hp = 430
+attack_damage = 5.8
+attack_interval = 0.55
+move_speed = 88
+attack_range = 16
+radius = 31
+preferred_min = 0
+preferred_max = 16
+color = Color(0.56, 0.62, 0.48, 1)
+skills = Array[ExtResource("2")]([ExtResource("3"), ExtResource("4")])

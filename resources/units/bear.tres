@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="ZooUnitDefinition" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/unit_definition.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/data/skill_definition.gd" id="2"]
+[ext_resource type="Resource" path="res://resources/skills/bear_slam.tres" id="3"]
+
+[resource]
+script = ExtResource("1")
+id = "bear"
+display_name = "Niedźwiedź"
+role = "front"
+max_hp = 150
+attack_damage = 6.5
+attack_interval = 1
+move_speed = 65
+attack_range = 18
+radius = 29
+preferred_min = 0
+preferred_max = 18
+color = Color(0.68, 0.40, 0.23, 1)
+skills = Array[ExtResource("2")]([ExtResource("3")])

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ZooSkillDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/skill_definition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "lvl3_10_triple_landing_cone_dive"
+behavior = "dive"
+cone_angle = 110
+target_rule = "farthest"
+airborne_hits = 3
+cooldown = 13
+initial_cooldown = 6
+recovery = 0.35
+damage = 33
+hit_interval = 0.5
+range = 90
+speed = 850
+landing_cone = true

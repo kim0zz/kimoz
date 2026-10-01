@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="ZooUnitDefinition" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/unit_definition.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/data/skill_definition.gd" id="2"]
+[ext_resource type="Resource" path="res://resources/hybrid_skills/monkey_hippo_banana.tres" id="3"]
+
+[resource]
+script = ExtResource("1")
+id = "monkey_hippo"
+display_name = "Małpa-Hipopotam"
+level = 2
+parents = Array[String](["monkey", "hippo"])
+visual_scale = 1.16
+role = "ranged"
+max_hp = 210
+attack_damage = 6
+attack_interval = 0.5
+move_speed = 72
+attack_range = 230
+radius = 28
+preferred_min = 115
+preferred_max = 190
+color = Color(0.54, 0.48, 0.44, 1)
+skills = Array[ExtResource("2")]([
+ExtResource("3")
+])

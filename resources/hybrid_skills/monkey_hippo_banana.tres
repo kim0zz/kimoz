@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ZooSkillDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/skill_definition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+behavior = "projectile"
+cooldown = 10
+initial_cooldown = 4.5
+damage = 65
+hit_interval = 0.15
+hits = 1
+id = "monkey_hippo_banana"
+range = 230
+recovery = 0.6
+speed = 400
+stun_duration = 1.25
+windup = 0.8

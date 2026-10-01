@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="ZooUnitDefinition" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/unit_definition.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/data/skill_definition.gd" id="2"]
+[ext_resource type="Resource" path="res://resources/lvl3/lvl3_09_trail.tres" id="3"]
+[ext_resource type="Resource" path="res://resources/lvl3/lvl3_09_thorns.tres" id="4"]
+[ext_resource type="Resource" path="res://resources/lvl3/lvl3_09_dash.tres" id="5"]
+
+[resource]
+script = ExtResource("1")
+id = "lvl3_09"
+display_name = "Boczny Smród"
+level = 3
+parents = Array[String](["skunk_rabbit", "bear_hedgehog"])
+visual_scale = 1.30
+role = "mobile"
+max_hp = 470
+attack_damage = 5.8
+attack_interval = 0.55
+attack_enabled = false
+move_speed = 82
+attack_range = 16
+radius = 32
+preferred_min = 0
+preferred_max = 16
+color = Color(0.58, 0.57, 0.39, 1)
+skills = Array[ExtResource("2")]([ExtResource("3"), ExtResource("4"), ExtResource("5")])
